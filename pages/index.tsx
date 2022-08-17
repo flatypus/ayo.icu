@@ -15,15 +15,14 @@ import {
   SiStyledcomponents as SiStyledComponents,
   SiTailwindcss,
   SiTypescript,
-  SiWebpack,
-  SiWebstorm,
-  SiYarn,
+  SiFirebase,
   SiGithub,
   SiDiscord,
   SiPython,
   SiCsharp,
   SiDocker,
   SiRust,
+  SiMongodb,
   // linked in
   SiLinkedin,
 } from "react-icons/si";
@@ -33,12 +32,13 @@ import { MdContactPage } from "react-icons/md";
 import React from "react";
 import { Tooltip, Typography } from "@mui/material";
 import Link from "next/link";
+import Typed from "../components/share/typed";
 
 function Home() {
   return (
     <>
       <Head>
-        <title>Home | alexng353</title>
+        <title>Home | flatypus</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
@@ -46,16 +46,16 @@ function Home() {
         <div className="inline-flex gap-3">
           <Tooltip title="Github">
             <a
-              href="https://github.com/alexng353"
+              href="https://github.com/flatypus"
               target="_blank"
               rel="noopener noreferrer"
             >
               <SiGithub style={{ color: "white" }} className="h-6 w-6" />
             </a>
           </Tooltip>
-          <Tooltip title="Twitter">
+          <Tooltip title="YouTube">
             <a
-              href="https://twitter.com/alexng353"
+              href="https://youtube.com/flatypus"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -84,11 +84,11 @@ function Home() {
         </div>
         <br />
         <p>Hey There, I&apos;m</p>
-        <Typography variant="h1" className="text-4xl tracking-wide">
-          Alex Ng
-        </Typography>
+        <h1 className="text-4xl tracking-wide">
+          <Typed text={"Hinson Chan! <a></a>"}></Typed>
+        </h1>
         <p className="pt-3">
-          I&apos;m a 16 year old Full Stack web developer from Vancouver,
+          I&apos;m a 15 year old Full Stack web developer from Vancouver,
           Canada. I&apos;m currently working as a{" "}
           <span className="text-green-400 hover:underline">
             <a href="https://www.edubeyond.org">
@@ -96,9 +96,14 @@ function Home() {
             </a>
           </span>
           , an international education charity that provides education
-          opportunities to children in developing countries. I&apos;m learning
-          containerization and kubernetes and doing my best to write something
-          useful for other people.
+          opportunities to children in developing countries. In my spare time, I
+          run a small
+          <a href="https://www.youtube.com/flatypus">
+            {" "}
+            engineering YouTube channel
+          </a>{" "}
+          where I share my projects. I'm currently (trying) to learn Next.js,
+          Rust, and Firebase.
         </p>
 
         <br />
@@ -111,18 +116,18 @@ function Home() {
           <ListItem icon={SiNodeDotJs} text="Node.js" />
           <ListItem icon={SiPython} text="Python" />
           <ListItem icon={SiTypescript} text="TypeScript" />
-          <ListItem icon={SiMysql} text="Mysql" />
-          <ListItem icon={SiCsharp} text="C#" />
+          <ListItem icon={SiMongodb} text="MongoDB" />
           <ListItem icon={SiNextDotJs} text="Next.js" />
           <ListItem icon={SiTailwindcss} text="TailwindCSS" />
           <ListItem icon={SiRedis} text="Redis" />
+          <ListItem icon={SiDocker} text="Docker" />
         </ul>
         <br />
         <h1 className="text-3xl">Learning</h1>
         <br />
         <ul className="grid grid-cols-3 gap-4 sm:grid-cols-4">
-          <ListItem icon={SiDocker} text="Docker" />
           <ListItem icon={SiRust} text="Rust" />
+          <ListItem icon={SiFirebase} text="Firebase" />
         </ul>
       </Content>
       <Footer />

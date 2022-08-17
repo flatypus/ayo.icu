@@ -19,8 +19,8 @@ export default function Contact() {
       <Content>
         {/* make the button small */}
         You can contact me at{" "}
-        <a href="mailto:alex@ayo.icu" className={styles.link}>
-          alex@ayo.icu
+        <a href="mailto:yhc3141@gmail.com" className={styles.link}>
+          yhc3141@gmail.com
         </a>
         <br />
         {/* center a div horizontally */}
